@@ -7,6 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap" rel="stylesheet">
     <title>Marcos - Portfólio pessoal</title>
 
 </head>
@@ -53,15 +54,22 @@
 </header>
 <!--HEADER FIM--> 
 
-<!--SOBRE INICIO-->
-<div class="container">
-    <div class="sobre-fundo">
-        <div class="fundo">
-            <img src="img/fundo.jpg" alt="fundo">
-        </div>
-    </div>
+<!--HOME-->
+<section class="home" style="background-image: url(img/fundo.jpg);"></section>
+
+<div id="particles-js">
+
 </div>
-<!--SOBRE FIM-->
+<!--HOME-->
+
+<script src="js/jquery.js"></script>
+<script src="js/main.js"></script>
+<script src="js/particles/particles.min.js"></script>
+<script>
+    particlesJS.load('particles-js', 'js/particles/particlesjs-config.json', function() {
+    console.log('callback - particles.js config loaded');
+  });
+</script>
 
 </body>
 
